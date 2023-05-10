@@ -1,7 +1,11 @@
 {"arquivo" : [ 
 	{"tag": "saudacao",
 	"patterns": ["olá","oi","como voce esta","ola novamente","bom dia","boa tarde","boa noite","ola"], 
+<<<<<<< HEAD
 	"responses": ["oi bem vindo ao sistema chatbot da Celepar Seed, faça a sua pergunta que iremos te ajudar!!!!"],
+=======
+	"responses": ["  oi bem vindo ao sistema chatbot da Celepar Seed, faça a sua pergunta que iremos te ajudar!!"],
+>>>>>>> b2dbe12 (removido o espaco da primeira resposta para teste)
 	"context_set": ""
 	},
 	{"tag": "sistema",
