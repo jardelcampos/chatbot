@@ -5,7 +5,7 @@
 	"context_set": ""
 	},
 	{"tag": "sistema",
-	"patterns": ["qual o seu nome","como eu te chamo","quem é voce","sobr","fez sistem","sobr"], 
+	"patterns": ["qual o seu nome","como eu te chamo","quem é voce","sobre","fez sistem","sobr"], 
 	"responses": ["Sistema desenvolvido pela Celepar Chatbot. Estamos aqui para te ajudar, faça uma pergunta para que possamos melhor te auxiliar"],
 	"context_set": ""
 	},
