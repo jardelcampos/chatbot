@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="{{ url_for('static', filename ='bootstrap.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename ='chatw3school.css' ) }}">
+    <style>
+    body {
+        background-image: url("./static/images/araucaria.png");
+        background-position: left bottom;
+        background-attachment: fixed;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+            z-index: -999;
+    }
+    .posicao{
+        margin-top: 15px;
+    }
+        </style>
+
+  </head>
+  <body onload="ClearForm()">
+  <div align="center" class="posicao">
+
+    <form action = "{{ url_for('criar') }}" method="post">
+        <fieldset>
+          <div class="form-group">
+            <label for="pergunta">{{ titulo }}</label>
+            <br><input type="text"  placeholder="Faça a sua pergunta!" id = "textarea" name="pergunta" onkeydown="pressed(event)" onclick="limpa_dados()"/>
+            <br>
+
+            <div class="container darker">
+                  <img src="./static/images/usuario.png" alt="Avatar" style="width:100%;">
+                  <p><b>{{ pergunta_do_usuario }}</b><br>
+                     <i>{{ pergunta }}</i><br></p>
+            </div>
+
+            <div class="container">
+                  <img src="./static/images/celepar.png" alt="Avatar" class="right" style="width:100%;">
+                  <p><b>{{ resposta_do_sistema }}</b><br>
+                        {{ resposta}}<br></p>
+                        {%if link_do_site == none %}
+                        <div></div>
+                        {%else %}
+                        <a href = {{ link_do_site }} target="_blank">{{ link_do_site }}</a>
+                        {%endif %}
+            </div>
+
+
+          </div>
+          <button type="submit" class="btn btn-primary btn-salvar">Pergunta</button>
+        </fieldset>
+      </form>
+  </div>
+
+      <script>
+            function pressed(e) {
+            // Has the enter key been pressed?
+            if ( (window.event ? event.keyCode : e.which) == 13) {
+                // If it has been so, manually submit the <form>
+                document.forms[0].submit();
+            }
+        }
+        function ClearForm(){
+            document.MyForm.reset();
+            }
+
+        function limpa_dados(){
+            document.getElementById("textarea").innerHTML = '';
+        }
+        $('textarea').autoResize();
+        </script>
+  </body>
+</html>
