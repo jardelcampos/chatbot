@@ -20,7 +20,7 @@
 	"context_set": ""
 	},
 	{"tag": "horas",
-	"patterns": ["horari atend"], 
+	"patterns": ["horari atend", "horari atendimento"], 
 	"responses": ["Nos estamos em atendimento de Segunda-Sexta das 8h-18h"],
 	"context_set": ""
 	},
