@@ -1,11 +1,7 @@
 {"arquivo" : [ 
 	{"tag": "saudacao",
 	"patterns": ["olá","oi","como voce esta","ola novamente","bom dia","boa tarde","boa noite","ola"], 
-<<<<<<< HEAD
 	"responses": ["oi bem vindo ao sistema chatbot da Celepar Seed, faça a sua pergunta que iremos te ajudar!!!!"],
-=======
-	"responses": ["  oi bem vindo ao sistema chatbot da Celepar Seed, faça a sua pergunta que iremos te ajudar!!"],
->>>>>>> b2dbe12 (removido o espaco da primeira resposta para teste)
 	"context_set": ""
 	},
 	{"tag": "sistema",
@@ -19,7 +15,7 @@
 	"context_set": ""
 	},
 	{"tag": "instalacao_impressora",
-	"patterns": ["instal impres","instal impres"], 
+	"patterns": ["instal impres","instal impres","instal impres de rede na maquina"], 
 	"responses": ["para impressoras de rede, favor localizar o ip da máquina que vai ser instalada a impressora, e o ip da impressora para agilizar o processo."],
 	"context_set": ""
 	},
